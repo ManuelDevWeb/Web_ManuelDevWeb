@@ -1,0 +1,12 @@
+1. Crear el proyecto y enlazarlo a github
+
+2. Crear la carpeta: components
+
+3. Crear el componente: components/Layout.js
+
+4. Crear el componente: components/TopLeftImg.js
+
+5. Crear el componente: components/Nav.js
+
+6. Crear el componente: components/Header.js
+
