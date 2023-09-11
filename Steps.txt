@@ -2,21 +2,26 @@
 
 2. Crear la carpeta: components
 
-3. Crear el componente: components/Layout.js
+3. Trabajar sobre la page: pages/index.js 
 
-4. Crear el componente: components/TopLeftImg.js
+4. Crear el componente: components/Layout.js
 
-5. Crear el componente: components/Nav.js
+5. Crear el componente: components/TopLeftImg.js
 
-6. Crear el componente: components/Header.js
+6. Crear el componente: components/Nav.js
 
-7. Crear el componente: components/Transition.js
+7. Crear el componente: components/Header.js
 
-8. Crear el componente: components/ProjectsBtn.js
+8. Crear el componente: components/Transition.js
 
-9. Crear el componente: components/Avatar.js
+9. Crear el componente: components/ProjectsBtn.js
 
-10. Crear el componente: components/ParticlesContainer.js
+10. Crear el componente: components/Avatar.js
 
-11. Crear el componente: components/Socials.js
+11. Crear el componente: components/ParticlesContainer.js
 
+12. Crear el componente: components/Socials.js
+
+13. Crear el archivo: pages/about/index.js
+
+14. Crear el componente: components/Circles.js

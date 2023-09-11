@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // Icons
-import { RiGithubLine, RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
+import { RiGithubFill, RiInstagramLine, RiLinkedinFill } from "react-icons/ri";
 
 const Socials = () => {
   return (
@@ -11,7 +11,7 @@ const Socials = () => {
         target="_blank"
         className="hover:text-yellow-500/100 transition-all duration-300"
       >
-        <RiGithubLine />
+        <RiGithubFill />
       </Link>
       <Link
         href={"https://www.instagram.com/manuelvalencial17/"}
@@ -25,7 +25,7 @@ const Socials = () => {
         target="_blank"
         className="hover:text-yellow-500/100 transition-all duration-300"
       >
-        <RiLinkedinLine />
+        <RiLinkedinFill />
       </Link>
     </div>
   );
