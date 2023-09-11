@@ -18,3 +18,5 @@
 
 10. Crear el componente: components/ParticlesContainer.js
 
+11. Crear el componente: components/Socials.js
+
