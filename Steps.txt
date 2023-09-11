@@ -12,3 +12,9 @@
 
 7. Crear el componente: components/Transition.js
 
+8. Crear el componente: components/ProjectsBtn.js
+
+9. Crear el componente: components/Avatar.js
+
+10. Crear el componente: components/ParticlesContainer.js
+

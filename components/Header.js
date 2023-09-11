@@ -1,5 +1,5 @@
 const Header = () => {
-  return <header>Header</header>;
+  return <header className="w-full absolute z-30">Header</header>;
 };
 
 export default Header;
