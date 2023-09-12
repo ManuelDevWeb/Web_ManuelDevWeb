@@ -25,3 +25,9 @@
 13. Crear el archivo: pages/about/index.js
 
 14. Crear el componente: components/Circles.js
+
+15. Crear el archivo: pages/services/index.js
+
+16. Crear el componente: components/ServicesSlider.js 
+
+17. Crear el componente: components/Buld.js

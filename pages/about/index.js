@@ -13,17 +13,27 @@ import CountUp from "react-countup";
 import {
   FaHtml5,
   FaCss3,
-  FaJs,
   FaReact,
-  FaWordpress,
+  FaSass,
+  FaBootstrap,
   FaFigma,
+  FaNodeJs,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
+  SiRedux,
+  SiTailwindcss,
   SiAdobexd,
-  SiAdobephotoshop,
+  SiNestjs,
+  SiJavascript,
+  SiJest,
+  SiTypescript,
+  SiMongodb,
+  SiMysql,
+  SiNeo4J,
+  SiGit,
+  SiAmazonaws,
 } from "react-icons/si";
 
 // data
@@ -32,21 +42,38 @@ const aboutData = [
     title: "skills",
     info: [
       {
+        title: "Fullstack",
+        icons: [
+          <SiJavascript key={1} />,
+          <SiTypescript key={2} />,
+          <SiAmazonaws key={3} />,
+          <SiJest key={4} />,
+          <SiGit key={5} />,
+        ],
+      },
+      {
         title: "Backend",
         icons: [
-          <SiNextdotjs key={5} />,
-          <SiFramer key={6} />,
-          <FaWordpress key={7} />,
+          <FaNodeJs key={1} />,
+          <SiNestjs key={2} />,
+          <SiMongodb key={3} />,
+          <SiMysql key={4} />,
+          <SiNeo4J key={5} />,
         ],
       },
       {
         title: "Frontend",
         icons: [
-          <FaFigma key={1} />,
           <FaHtml5 key={1} />,
           <FaCss3 key={2} />,
-          <FaJs key={3} />,
           <FaReact key={4} />,
+          <SiRedux key={5} />,
+          <SiNextdotjs key={6} />,
+          <FaBootstrap key={7} />,
+          <FaSass key={8} />,
+          <SiTailwindcss key={9} />,
+          <SiAdobexd key={10} />,
+          <FaFigma key={11} />,
         ],
       },
     ],
@@ -55,11 +82,11 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Backend Developer - Mango Soft",
+        title: "Backend Developer | Mango Soft",
         stage: "2022 - 2023",
       },
       {
-        title: "Frontend Developer - CBW Agency",
+        title: "Frontend Developer | CBW Agency",
         stage: "2021 - 2022",
       },
     ],
@@ -69,19 +96,19 @@ const aboutData = [
     info: [
       {
         title:
-          "Ingenieria Informatica - Politecnico Colombiano Jaime Isaza Cadavid",
+          "Ingenieria Informatica | Politecnico Colombiano Jaime Isaza Cadavid",
+        stage: "2017 - 2022",
+      },
+      {
+        title: "Certificado Carrera de Desarrollo Web con JavaScript | Platzi",
         stage: "2022",
       },
       {
-        title: "Certificado Carrera de Desarrollo Web con JavaScript - Platzi",
+        title: "Certificado Frontend con React | Platzi",
         stage: "2022",
       },
       {
-        title: "Certificado Frontend con React - Platzi",
-        stage: "2022",
-      },
-      {
-        title: "Certificado Backend con Node.js - Platzi",
+        title: "Certificado Backend con Node.js | Platzi",
         stage: "2023",
       },
     ],
@@ -151,7 +178,7 @@ const About = () => {
                 </div>
               </div>
               {/* Projects */}
-              <div className="relative w-1/3">
+              <div className="relative w-1/3 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-yellow-500/100 mb-2">
                   <CountUp start={0} end={100} duration={5} /> +
                 </div>
@@ -160,9 +187,9 @@ const About = () => {
                 </div>
               </div>
               {/* Clients */}
-              <div className="relative w-1/3 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="relative w-1/3 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-yellow-500/100 mb-2">
-                  <CountUp start={0} end={20} duration={5} /> +
+                  <CountUp start={0} end={30} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Technologies & Tools
@@ -180,7 +207,7 @@ const About = () => {
           className="flex flex-col w-full h-[450px] xl:max-w-[48%]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, i) => {
+            {aboutData?.map((item, i) => {
               return (
                 <div
                   key={i}
@@ -196,17 +223,16 @@ const About = () => {
             })}
           </div>
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, i) => {
+            {aboutData[index]?.info.map((item, i) => {
               return (
                 <div
                   key={i}
-                  className="flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/70"
+                  className="flex flex-col max-w-max gap-x-2 items-center lg:items-start text-white/70"
                 >
                   {/* Title */}
-                  <div className="font-light my-3 md:my-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
+                  <div className="font-light my-1 md:my-0">{item.title}</div>
                   {/* Stage */}
-                  <div>{item.stage}</div>
+                  <div className="hidden md:flex">{item?.stage}</div>
                   {/* Icons */}
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, i) => {

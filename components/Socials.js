@@ -11,21 +11,21 @@ const Socials = () => {
         target="_blank"
         className="hover:text-yellow-500/100 transition-all duration-300"
       >
-        <RiGithubFill />
+        <RiGithubFill fontSize={25} />
       </Link>
       <Link
         href={"https://www.instagram.com/manuelvalencial17/"}
         target="_blank"
         className="hover:text-yellow-500/100 transition-all duration-300"
       >
-        <RiInstagramLine />
+        <RiInstagramLine fontSize={25} />
       </Link>
       <Link
         href={"https://www.linkedin.com/in/manueldevweb/"}
         target="_blank"
         className="hover:text-yellow-500/100 transition-all duration-300"
       >
-        <RiLinkedinFill />
+        <RiLinkedinFill fontSize={25} />
       </Link>
     </div>
   );
