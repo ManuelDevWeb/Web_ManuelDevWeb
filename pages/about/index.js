@@ -34,10 +34,6 @@ const aboutData = [
       {
         title: "Backend",
         icons: [
-          <FaHtml5 key={1} />,
-          <FaCss3 key={2} />,
-          <FaJs key={3} />,
-          <FaReact key={4} />,
           <SiNextdotjs key={5} />,
           <SiFramer key={6} />,
           <FaWordpress key={7} />,
@@ -47,8 +43,10 @@ const aboutData = [
         title: "Frontend",
         icons: [
           <FaFigma key={1} />,
-          <SiAdobexd key={2} />,
-          <SiAdobephotoshop key={3} />,
+          <FaHtml5 key={1} />,
+          <FaCss3 key={2} />,
+          <FaJs key={3} />,
+          <FaReact key={4} />,
         ],
       },
     ],
@@ -70,16 +68,21 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title:
+          "Ingenieria Informatica - Politecnico Colombiano Jaime Isaza Cadavid",
+        stage: "2022",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Certificado Carrera de Desarrollo Web con JavaScript - Platzi",
+        stage: "2022",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Certificado Frontend con React - Platzi",
+        stage: "2022",
+      },
+      {
+        title: "Certificado Backend con Node.js - Platzi",
+        stage: "2023",
       },
     ],
   },
@@ -125,9 +128,9 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, I have
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            4 years ago, I began as a developer. Since then, I have studied
+            multiple technologies, done a lot of projects applying best
+            practices and providing a good user experience.
           </motion.p>
           {/* Counters */}
           <motion.div
@@ -141,28 +144,28 @@ const About = () => {
               {/* Experience */}
               <div className="relative w-1/3 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-yellow-500/100 mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={3} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of Experience
                 </div>
               </div>
-              {/* Clients */}
-              <div className="relative w-1/3 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-yellow-500/100 mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
-                </div>
-              </div>
               {/* Projects */}
               <div className="relative w-1/3">
                 <div className="text-2xl xl:text-4xl font-extrabold text-yellow-500/100 mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={100} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finishied projects
+                </div>
+              </div>
+              {/* Clients */}
+              <div className="relative w-1/3 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-yellow-500/100 mb-2">
+                  <CountUp start={0} end={20} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Technologies & Tools
                 </div>
               </div>
             </div>
