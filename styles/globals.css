@@ -43,7 +43,7 @@
   }
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:text-yellow-500 border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 bg-transparent outline-none focus:ring-1 focus:text-yellow-500 border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
