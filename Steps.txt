@@ -31,3 +31,7 @@
 16. Crear el componente: components/ServicesSlider.js 
 
 17. Crear el componente: components/Buld.js
+
+18. Crear el archivo: pages/work/index.js
+
+19. Crear el componente: components/WorkSlider.js 
