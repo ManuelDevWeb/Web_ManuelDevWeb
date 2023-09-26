@@ -37,3 +37,15 @@
 19. Crear el componente: components/WorkSlider.js 
 
 20. Crear el archivo: pages/contact/index.js
+
+21. Instalar i18: npm i i18next react-i18next 
+
+22. Crear la carpeta: translations 
+
+23. Crear la carpeta: translations/en 
+
+24. Crear la carpeta: translations/es
+
+25. Crear el archivo: translations/en/global.json
+
+26. Crear el archivo: translations/es/global.json

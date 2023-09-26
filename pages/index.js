@@ -6,10 +6,15 @@ import Avatar from "../components/Avatar";
 // Motion
 import { motion } from "framer-motion";
 
+// Translations
+import { useTranslation } from "react-i18next";
+
 // Variants
 import { fadeIn } from "../variants";
 
 const Home = () => {
+  const [element, i18n] = useTranslation("global");
+
   return (
     <div className="bg-primary/80 xl:bg-primary/60 h-full">
       {/* Text */}
@@ -23,8 +28,10 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-yellow-500/100">Digital Reality</span>{" "}
+            {element("home.title.first")} <br /> {element("home.title.second")}{" "}
+            <span className="text-yellow-500/100">
+              {element("home.title.third")}
+            </span>{" "}
           </motion.h1>
           {/* Subtitle */}
           <motion.p
@@ -34,9 +41,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Passionate about technology, self-taught, and pragmatic. I enjoy
-            solving and analyzingproblems through computer solutions, applying
-            my knowledge of algorithms and logic.
+            {element("home.description")}
           </motion.p>
           {/* Button */}
           <div className="flex justify-center xl:hidden relative">
